@@ -20,9 +20,9 @@ export function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in opacity-0" style={{ animationDelay: '0.4s' }}>
-          <Link href="#explainer">
+          <Link href="#notify">
             <button className="bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-xl text-xs font-bold uppercase tracking-widest transition-all shadow-2xl shadow-primary/20">
-              View Architecture
+              Get Updates
             </button>
           </Link>
           <Link href="#features">

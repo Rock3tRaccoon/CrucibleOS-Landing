@@ -14,7 +14,7 @@ export default function Home() {
       <Hero />
       <AboutSection />
       <Features />
-      <FeatureExplainer />
+      {/* <FeatureExplainer /> */}
       <JoinPulse />
       <Disclaimers />
       <Footer />
