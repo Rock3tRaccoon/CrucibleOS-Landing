@@ -1,0 +1,23 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Abstract technological background with glowing lines",
+      "imageUrl": "https://picsum.photos/seed/crucible-hero/1200/800",
+      "imageHint": "technology network"
+    },
+    {
+      "id": "feature-kernel",
+      "description": "Microkernel architecture diagram",
+      "imageUrl": "https://picsum.photos/seed/crucible-kernel/400/300",
+      "imageHint": "circuit computer"
+    },
+    {
+      "id": "feature-security",
+      "description": "Secure computing concept",
+      "imageUrl": "https://picsum.photos/seed/crucible-security/400/300",
+      "imageHint": "security lock"
+    }
+  ]
+}
