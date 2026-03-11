@@ -54,6 +54,7 @@ export function Footer() {
         
         <div className="pt-10 border-t border-border text-center text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} CrucibleOS Project. All rights reserved.</p>
+          <p className="mt-2 text-xs opacity-50 font-medium tracking-wider uppercase">Developed by Sing Security</p>
         </div>
       </div>
     </footer>
