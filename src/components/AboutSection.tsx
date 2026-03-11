@@ -23,7 +23,7 @@ export function AboutSection() {
                 isolated user-space processes. A failure in a GPU driver won't bring down your 
                 entire system—it simply restarts.
               </p>
-              <p className="text-white/80 font-medium">
+              <p className="text-white/80 font-medium border-l-2 border-primary pl-6">
                 Our microkernel architecture provides the foundation for a crash-resistant 
                 computing environment that scales from embedded systems to massive server clusters.
               </p>
@@ -42,13 +42,13 @@ export function AboutSection() {
             </div>
           </div>
 
-          <div className="relative aspect-square lg:aspect-[4/5] rounded-sm overflow-hidden border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.5)]">
+          <div className="relative aspect-square lg:aspect-[4/5] rounded-none overflow-hidden border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.5)]">
             {aboutImg && (
               <Image 
                 src={aboutImg.imageUrl} 
                 alt={aboutImg.description}
                 fill
-                className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                className="object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-700"
                 data-ai-hint={aboutImg.imageHint}
               />
             )}

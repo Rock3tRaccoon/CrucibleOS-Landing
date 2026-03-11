@@ -50,7 +50,7 @@ export function Features() {
           {features.map((f, i) => (
             <Card key={i} className="bg-background border-none rounded-none hover:bg-white/[0.02] transition-colors p-8 group h-full">
               <CardHeader className="p-0 mb-6">
-                <div className="mb-6">
+                <div className="mb-6 p-3 bg-secondary inline-block">
                   {f.icon}
                 </div>
                 <CardTitle className="text-xl font-bold tracking-tight text-white">{f.title}</CardTitle>
