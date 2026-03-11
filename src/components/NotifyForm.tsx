@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -37,28 +36,28 @@ export function NotifyForm() {
   }
 
   return (
-    <div id="notify" className="w-full max-w-md mx-auto">
+    <div className="w-full max-w-md mx-auto">
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
         <div className="flex-1">
           <Input 
             name="email"
             type="email" 
-            placeholder="Enter your email" 
+            placeholder="Technical email address" 
             required 
-            className="bg-secondary border-border focus:ring-accent focus:border-accent h-12"
+            className="bg-secondary border-border focus:ring-primary focus:border-primary h-12 rounded-none"
           />
         </div>
         <Button 
           type="submit" 
           disabled={loading}
-          className="bg-accent hover:bg-accent/90 text-background font-bold h-12 px-6 electric-glow"
+          className="bg-primary hover:bg-primary/90 text-white font-bold h-12 px-8 rounded-none electric-glow uppercase text-[10px] tracking-widest"
         >
           {loading ? (
             <Loader2 className="w-5 h-5 animate-spin" />
           ) : (
             <>
               <BellRing className="w-4 h-4 mr-2" />
-              Notify When Available
+              Subscribe
             </>
           )}
         </Button>

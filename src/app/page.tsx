@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import { AboutSection } from "@/components/AboutSection";
 import { Features } from "@/components/Features";
 import { FeatureExplainer } from "@/components/FeatureExplainer";
+import { JoinPulse } from "@/components/JoinPulse";
 import { Disclaimers } from "@/components/Disclaimers";
 import { Footer } from "@/components/Footer";
 
@@ -14,6 +15,7 @@ export default function Home() {
       <AboutSection />
       <Features />
       <FeatureExplainer />
+      <JoinPulse />
       <Disclaimers />
       <Footer />
     </main>

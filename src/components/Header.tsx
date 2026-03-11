@@ -18,12 +18,12 @@ export function Header() {
           <Link href="#features" className="hover:text-white transition-colors">Architecture</Link>
           <Link href="#about" className="hover:text-white transition-colors">Kernel</Link>
           <Link href="#explainer" className="hover:text-white transition-colors">Documentation</Link>
-          <Link href="#notify" className="hover:text-white transition-colors">Download</Link>
+          <Link href="#notify" className="hover:text-white transition-colors">Get Notified</Link>
         </nav>
 
         <Link href="#notify" className="hidden lg:block">
           <button className="bg-white text-black hover:bg-neutral-200 px-6 py-2.5 rounded-none text-[11px] font-bold tracking-wider uppercase transition-all shadow-xl">
-            Join Waitlist
+            Get Notified
           </button>
         </Link>
       </div>
