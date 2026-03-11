@@ -13,7 +13,7 @@ export function Footer() {
                 <SvgAsset name="logo" envKey="LOGO_SVG_PATH" className="text-white w-5 h-5" />
               </div>
               <span className="font-headline font-bold text-lg text-white">
-                Crucible<span className="text-primary">OS</span>
+                Crucible<span className="text-accent">OS</span>
               </span>
             </div>
             <p className="text-muted-foreground max-w-sm mb-8">

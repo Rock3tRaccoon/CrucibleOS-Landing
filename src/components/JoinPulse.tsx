@@ -10,7 +10,7 @@ export function JoinPulse() {
             Join the Pulse.
           </h2>
           <p className="text-lg text-muted-foreground/60 leading-relaxed font-normal">
-            Be the first to know when the CrucibleOS kernel reaches beta milestones. 
+            Be the first to know when the Crucible<span className="text-accent">OS</span> kernel reaches beta milestones. 
             No marketing fluff—just technical documentation and release candidates.
           </p>
           <div className="pt-4">
