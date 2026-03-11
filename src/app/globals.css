@@ -1,30 +1,29 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 220 15% 10%;
+    --background: 222 25% 6%;
     --foreground: 0 0% 98%;
-    --card: 220 15% 12%;
+    --card: 222 25% 8%;
     --card-foreground: 0 0% 98%;
-    --popover: 220 15% 10%;
+    --popover: 222 25% 6%;
     --popover-foreground: 0 0% 98%;
-    --primary: 220 70% 30%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 220 15% 15%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 222 25% 12%;
     --secondary-foreground: 0 0% 98%;
-    --muted: 220 15% 20%;
-    --muted-foreground: 220 10% 65%;
-    --accent: 190 80% 60%;
-    --accent-foreground: 220 15% 10%;
+    --muted: 222 25% 15%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 222 47% 11%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 220 15% 20%;
-    --input: 220 15% 20%;
-    --ring: 190 80% 60%;
-    --radius: 0.75rem;
+    --border: 222 25% 15%;
+    --input: 222 25% 15%;
+    --ring: 217 91% 60%;
+    --radius: 0.5rem;
   }
 }
 
@@ -33,15 +32,12 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-body;
+    @apply bg-background text-foreground font-body antialiased;
+    background: radial-gradient(circle at center, hsl(222 25% 10%) 0%, hsl(222 25% 6%) 100%);
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-headline;
   }
-}
-
-.electric-glow {
-  box-shadow: 0 0 20px rgba(60, 204, 245, 0.3);
 }
 
 .feature-card-hover {
@@ -49,7 +45,16 @@
 }
 
 .feature-card-hover:hover {
-  transform: translateY(-5px);
-  border-color: hsl(var(--accent));
-  box-shadow: 0 10px 30px -10px rgba(60, 204, 245, 0.2);
+  transform: translateY(-4px);
+  border-color: hsl(var(--primary) / 0.5);
+  background-color: hsl(var(--secondary) / 0.8);
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out forwards;
 }
