@@ -41,7 +41,7 @@ export function AboutSection() {
             </div>
           </div>
 
-          <div className="relative aspect-square lg:aspect-[4/5] rounded-none overflow-hidden border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.5)]">
+          <div className="relative aspect-square lg:aspect-[4/5] rounded-3xl overflow-hidden border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.5)]">
             {aboutImg && (
               <Image 
                 src={aboutImg.imageUrl} 

@@ -22,7 +22,7 @@ export function Header() {
         </nav>
 
         <Link href="#notify" className="hidden lg:block">
-          <button className="bg-white text-black hover:bg-neutral-200 px-6 py-2.5 rounded-none text-[11px] font-bold tracking-wider uppercase transition-all shadow-xl">
+          <button className="bg-white text-black hover:bg-neutral-200 px-6 py-2.5 rounded-lg text-[11px] font-bold tracking-wider uppercase transition-all shadow-xl">
             Get Notified
           </button>
         </Link>

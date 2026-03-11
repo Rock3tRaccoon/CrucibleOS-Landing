@@ -21,12 +21,12 @@ export function Hero() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in opacity-0" style={{ animationDelay: '0.4s' }}>
           <Link href="#explainer">
-            <button className="bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-sm text-xs font-bold uppercase tracking-widest transition-all shadow-2xl shadow-primary/20">
+            <button className="bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-xl text-xs font-bold uppercase tracking-widest transition-all shadow-2xl shadow-primary/20">
               View Architecture
             </button>
           </Link>
           <Link href="#features">
-            <button className="bg-transparent border border-white/10 hover:bg-white/5 text-white px-10 py-4 rounded-sm text-xs font-bold uppercase tracking-widest transition-all">
+            <button className="bg-transparent border border-white/10 hover:bg-white/5 text-white px-10 py-4 rounded-xl text-xs font-bold uppercase tracking-widest transition-all">
               Kernel Docs
             </button>
           </Link>

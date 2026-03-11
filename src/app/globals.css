@@ -23,7 +23,7 @@
     --border: 231 4% 15%;
     --input: 231 4% 15%;
     --ring: 6 70% 59%;
-    --radius: 0rem; /* Industrial sharp edges */
+    --radius: 0.75rem; /* Modern rounded edges */
   }
 }
 

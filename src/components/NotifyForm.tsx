@@ -44,13 +44,13 @@ export function NotifyForm() {
             type="email" 
             placeholder="Technical email address" 
             required 
-            className="bg-secondary border-border focus:ring-primary focus:border-primary h-12 rounded-none"
+            className="bg-secondary border-border focus:ring-primary focus:border-primary h-12 rounded-xl"
           />
         </div>
         <Button 
           type="submit" 
           disabled={loading}
-          className="bg-primary hover:bg-primary/90 text-white font-bold h-12 px-8 rounded-none electric-glow uppercase text-[10px] tracking-widest"
+          className="bg-primary hover:bg-primary/90 text-white font-bold h-12 px-8 rounded-xl electric-glow uppercase text-[10px] tracking-widest"
         >
           {loading ? (
             <Loader2 className="w-5 h-5 animate-spin" />
