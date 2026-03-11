@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -41,7 +40,7 @@ export function FeatureExplainer() {
               Don't let tech jargon slow you down.
             </h2>
             <p className="text-lg text-muted-foreground max-w-lg">
-              CrucibleOS Pulse is built on advanced concepts. Use our Pulse-AI tool to get instant, human-friendly explanations of any technical feature.
+              CrucibleOS is built on advanced concepts. Use our Pulse-AI tool to get instant, human-friendly explanations of any technical feature.
             </p>
             
             <div className="flex flex-wrap gap-2">

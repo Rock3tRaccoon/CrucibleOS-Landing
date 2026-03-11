@@ -10,7 +10,7 @@ export function Header() {
         <div className="flex items-center gap-2.5 group cursor-pointer">
           <Cpu className="w-7 h-7 text-primary transition-transform group-hover:scale-110" />
           <span className="font-headline font-bold text-xl tracking-tight text-white">
-            CrucibleOS <span className="text-primary/90">Pulse</span>
+            Crucible<span className="text-primary">OS</span>
           </span>
         </div>
         

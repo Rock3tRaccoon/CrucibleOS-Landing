@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'CrucibleOS Pulse | Next-Gen Microkernel OS',
+  title: 'CrucibleOS | Next-Gen Microkernel OS',
   description: 'A modern, high-performance microkernel operating system designed for the future of reliable computing.',
 };
 

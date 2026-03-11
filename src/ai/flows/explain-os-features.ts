@@ -20,7 +20,7 @@ const explainOsFeaturesPrompt = ai.definePrompt({
   name: 'explainOsFeaturesPrompt',
   input: {schema: ExplainOsFeaturesInputSchema},
   output: {schema: ExplainOsFeaturesOutputSchema},
-  prompt: `You are an AI assistant for the CrucibleOS Pulse landing page. Your task is to provide concise and easy-to-understand explanations for technical features of an Open Source Operating System, aimed at potential users who want to quickly grasp its value.
+  prompt: `You are an AI assistant for the CrucibleOS landing page. Your task is to provide concise and easy-to-understand explanations for technical features of an Open Source Operating System, aimed at potential users who want to quickly grasp its value.
 
 Explain the following feature:
 {{{input}}}`

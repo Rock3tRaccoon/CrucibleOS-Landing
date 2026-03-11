@@ -16,7 +16,7 @@ export function Hero() {
         </h1>
         
         <p className="text-lg md:text-xl text-muted-foreground/60 max-w-2xl mx-auto mb-12 animate-fade-in opacity-0 leading-relaxed" style={{ animationDelay: '0.2s' }}>
-          CrucibleOS Pulse is a high-performance, POSIX-compliant operating system built from the ground up for stability, modularity, and memory safety.
+          CrucibleOS is a high-performance, POSIX-compliant operating system built from the ground up for stability, modularity, and memory safety.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in opacity-0" style={{ animationDelay: '0.4s' }}>

@@ -1,4 +1,3 @@
-
 import { Cpu, Github, Twitter, Mail } from "lucide-react";
 import Link from "next/link";
 
@@ -12,7 +11,9 @@ export function Footer() {
               <div className="bg-primary p-1 rounded-lg">
                 <Cpu className="w-5 h-5 text-white" />
               </div>
-              <span className="font-headline font-bold text-lg">CrucibleOS Pulse</span>
+              <span className="font-headline font-bold text-lg">
+                Crucible<span className="text-primary">OS</span>
+              </span>
             </div>
             <p className="text-muted-foreground max-w-sm mb-8">
               Forging the future of open source systems with performance, reliability, and modularity at our core.
