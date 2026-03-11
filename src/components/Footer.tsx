@@ -1,5 +1,6 @@
-import { Cpu, Github, Twitter, Mail } from "lucide-react";
+import { Github, Twitter, Mail } from "lucide-react";
 import Link from "next/link";
+import { SvgAsset } from "./SvgAsset";
 
 export function Footer() {
   return (
@@ -8,10 +9,10 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-2">
             <div className="flex items-center gap-2 mb-6">
-              <div className="bg-primary p-1 rounded-lg">
-                <Cpu className="w-5 h-5 text-white" />
+              <div className="bg-primary p-1 rounded-lg w-7 h-7 flex items-center justify-center">
+                <SvgAsset name="logo" envKey="LOGO_SVG_PATH" className="text-white w-5 h-5" />
               </div>
-              <span className="font-headline font-bold text-lg">
+              <span className="font-headline font-bold text-lg text-white">
                 Crucible<span className="text-primary">OS</span>
               </span>
             </div>
@@ -32,7 +33,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-headline font-bold mb-6">Project</h4>
+            <h4 className="font-headline font-bold mb-6 text-white text-sm uppercase tracking-widest">Project</h4>
             <ul className="space-y-4 text-sm text-muted-foreground">
               <li><Link href="#features" className="hover:text-accent transition-colors">Features</Link></li>
               <li><Link href="#notify" className="hover:text-accent transition-colors">Roadmap</Link></li>
@@ -42,7 +43,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-headline font-bold mb-6">Support</h4>
+            <h4 className="font-headline font-bold mb-6 text-white text-sm uppercase tracking-widest">Support</h4>
             <ul className="space-y-4 text-sm text-muted-foreground">
               <li><Link href="#" className="hover:text-accent transition-colors">Community</Link></li>
               <li><Link href="#" className="hover:text-accent transition-colors">Contributing</Link></li>

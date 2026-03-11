@@ -1,18 +1,18 @@
-"use client";
-
-import { Cpu } from "lucide-react";
 import Link from "next/link";
+import { SvgAsset } from "./SvgAsset";
 
 export function Header() {
   return (
     <header className="fixed top-0 w-full z-50 bg-background/50 backdrop-blur-xl border-b border-white/5">
       <div className="container mx-auto px-6 h-20 flex items-center justify-between">
-        <div className="flex items-center gap-2.5 group cursor-pointer">
-          <Cpu className="w-7 h-7 text-primary transition-transform group-hover:scale-110" />
+        <Link href="/" className="flex items-center gap-2.5 group cursor-pointer">
+          <div className="w-7 h-7 text-primary transition-transform group-hover:scale-110">
+            <SvgAsset name="logo" envKey="LOGO_SVG_PATH" />
+          </div>
           <span className="font-headline font-bold text-xl tracking-tight text-white">
             Crucible<span className="text-primary">OS</span>
           </span>
-        </div>
+        </Link>
         
         <nav className="hidden md:flex items-center gap-10 text-[11px] font-bold tracking-[0.1em] uppercase text-muted-foreground/60">
           <Link href="#features" className="hover:text-white transition-colors">Architecture</Link>
