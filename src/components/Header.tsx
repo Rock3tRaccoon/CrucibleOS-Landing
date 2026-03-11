@@ -10,7 +10,7 @@ export function Header() {
             <SvgAsset name="logo" envKey="LOGO_SVG_PATH" />
           </div>
           <span className="font-headline font-bold text-xl tracking-tight text-white">
-            Crucible<span className="text-accent">OS</span>
+            Crucible<span className="text-primary">OS</span>
           </span>
         </Link>
         

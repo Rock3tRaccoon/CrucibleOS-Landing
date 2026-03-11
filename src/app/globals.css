@@ -6,9 +6,9 @@
   :root {
     --background: 0 0% 0%;
     --foreground: 0 0% 98%;
-    --card: 0 0% 0%;
+    --card: 0 0% 2%;
     --card-foreground: 0 0% 98%;
-    --popover: 0 0% 0%;
+    --popover: 0 0% 2%;
     --popover-foreground: 0 0% 98%;
     --primary: 6 70% 59%; /* The industrial red-orange */
     --primary-foreground: 0 0% 100%;
@@ -16,14 +16,14 @@
     --secondary-foreground: 0 0% 98%;
     --muted: 231 4% 8%;
     --muted-foreground: 231 4% 60%;
-    --accent: 210 100% 50%; /* The blue for "OS" */
+    --accent: 6 70% 59%; /* Unified to red-orange */
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 231 4% 15%;
     --input: 231 4% 15%;
     --ring: 6 70% 59%;
-    --radius: 0.75rem; /* Modern rounded edges */
+    --radius: 1rem; /* Modern rounded edges */
   }
 }
 

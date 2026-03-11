@@ -13,20 +13,20 @@ export function Footer() {
                 <SvgAsset name="logo" envKey="LOGO_SVG_PATH" className="text-white w-5 h-5" />
               </div>
               <span className="font-headline font-bold text-lg text-white">
-                Crucible<span className="text-accent">OS</span>
+                Crucible<span className="text-primary">OS</span>
               </span>
             </div>
             <p className="text-muted-foreground max-w-sm mb-8">
               Forging the future of open source systems with performance, reliability, and modularity at our core.
             </p>
             <div className="flex gap-4">
-              <Link href="#" className="p-2 rounded-full bg-secondary hover:bg-accent transition-colors group">
+              <Link href="#" className="p-2 rounded-full bg-secondary hover:bg-primary transition-colors group">
                 <Github className="w-5 h-5 text-muted-foreground group-hover:text-background" />
               </Link>
-              <Link href="#" className="p-2 rounded-full bg-secondary hover:bg-accent transition-colors group">
+              <Link href="#" className="p-2 rounded-full bg-secondary hover:bg-primary transition-colors group">
                 <Twitter className="w-5 h-5 text-muted-foreground group-hover:text-background" />
               </Link>
-              <Link href="#" className="p-2 rounded-full bg-secondary hover:bg-accent transition-colors group">
+              <Link href="#" className="p-2 rounded-full bg-secondary hover:bg-primary transition-colors group">
                 <Mail className="w-5 h-5 text-muted-foreground group-hover:text-background" />
               </Link>
             </div>
@@ -35,20 +35,20 @@ export function Footer() {
           <div>
             <h4 className="font-headline font-bold mb-6 text-white text-sm uppercase tracking-widest">Project</h4>
             <ul className="space-y-4 text-sm text-muted-foreground">
-              <li><Link href="#features" className="hover:text-accent transition-colors">Features</Link></li>
-              <li><Link href="#notify" className="hover:text-accent transition-colors">Get Notified</Link></li>
-              <li><Link href="#" className="hover:text-accent transition-colors">Documentation</Link></li>
-              <li><Link href="#" className="hover:text-accent transition-colors">Source Code</Link></li>
+              <li><Link href="#features" className="hover:text-primary transition-colors">Features</Link></li>
+              <li><Link href="#notify" className="hover:text-primary transition-colors">Get Notified</Link></li>
+              <li><Link href="#" className="hover:text-primary transition-colors">Documentation</Link></li>
+              <li><Link href="#" className="hover:text-primary transition-colors">Source Code</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-headline font-bold mb-6 text-white text-sm uppercase tracking-widest">Support</h4>
             <ul className="space-y-4 text-sm text-muted-foreground">
-              <li><Link href="#" className="hover:text-accent transition-colors">Community</Link></li>
-              <li><Link href="#" className="hover:text-accent transition-colors">Contributing</Link></li>
-              <li><Link href="#disclaimer" className="hover:text-accent transition-colors">Disclaimers</Link></li>
-              <li><Link href="#" className="hover:text-accent transition-colors">Privacy Policy</Link></li>
+              <li><Link href="#" className="hover:text-primary transition-colors">Community</Link></li>
+              <li><Link href="#" className="hover:text-primary transition-colors">Contributing</Link></li>
+              <li><Link href="#disclaimer" className="hover:text-primary transition-colors">Disclaimers</Link></li>
+              <li><Link href="#" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
             </ul>
           </div>
         </div>

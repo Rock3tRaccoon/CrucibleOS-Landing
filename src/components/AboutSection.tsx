@@ -18,7 +18,7 @@ export function AboutSection() {
             
             <div className="space-y-8 text-lg text-muted-foreground/60 leading-relaxed font-normal max-w-xl">
               <p>
-                Unlike monolithic kernels, Crucible<span className="text-accent">OS</span> moves device drivers and file systems into 
+                Unlike monolithic kernels, Crucible<span className="text-primary">OS</span> moves device drivers and file systems into 
                 isolated user-space processes. A failure in a GPU driver won't bring down your 
                 entire system—it simply restarts.
               </p>
