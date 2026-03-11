@@ -48,9 +48,9 @@ export function Features() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5 border border-white/5">
           {features.map((f, i) => (
-            <Card key={i} className="bg-background border-none rounded-none hover:bg-white/[0.02] transition-colors p-8 group h-full">
+            <Card key={i} className="bg-background border-none rounded-none transition-colors p-8 group h-full">
               <CardHeader className="p-0 mb-6 flex flex-col items-start">
-                <div className="mb-6 p-3 bg-secondary w-fit flex items-center justify-center">
+                <div className="mb-6 p-3 bg-white/5 w-fit flex items-center justify-center">
                   {f.icon}
                 </div>
                 <CardTitle className="text-xl font-bold tracking-tight text-white">{f.title}</CardTitle>
