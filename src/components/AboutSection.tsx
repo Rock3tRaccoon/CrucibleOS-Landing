@@ -6,40 +6,53 @@ export function AboutSection() {
   const aboutImg = PlaceHolderImages.find(img => img.id === 'about-defense');
 
   return (
-    <section id="about" className="py-32 bg-background/50">
+    <section id="about" className="py-32 border-y border-white/5">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
-          <div className="space-y-8">
-            <Badge variant="secondary" className="bg-muted text-muted-foreground hover:bg-muted font-medium px-3 py-1 text-[11px] uppercase tracking-wider rounded-sm">
-              About Us
-            </Badge>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white">
-              Advancing Digital Defense
-            </h2>
-            <div className="space-y-6 text-lg text-muted-foreground/80 leading-relaxed font-normal max-w-xl">
+        <div className="grid lg:grid-cols-2 gap-24 items-center">
+          <div className="space-y-10">
+            <div className="space-y-4">
+              <span className="text-primary text-[10px] font-bold uppercase tracking-[0.3em]">System Core</span>
+              <h2 className="text-4xl md:text-6xl font-bold tracking-tighter text-white leading-[1.1]">
+                Isolated Drivers.<br/>Zero Kernel Panics.
+              </h2>
+            </div>
+            
+            <div className="space-y-8 text-lg text-muted-foreground/60 leading-relaxed font-normal max-w-xl">
               <p>
-                Founded by leading experts in systems security, CrucibleOS Pulse is a 
-                research organization committed to advancing the field of digital defense. 
-                Our values are rooted in integrity, collaboration, and a relentless pursuit of knowledge.
+                Unlike monolithic kernels, CrucibleOS moves device drivers and file systems into 
+                isolated user-space processes. A failure in a GPU driver won't bring down your 
+                entire system—it simply restarts.
               </p>
-              <p>
-                We build foundations for a secure future, ensuring that the most critical 
-                infrastructure remains resilient against the evolving landscape of digital threats.
+              <p className="text-white/80 font-medium">
+                Our microkernel architecture provides the foundation for a crash-resistant 
+                computing environment that scales from embedded systems to massive server clusters.
               </p>
+            </div>
+
+            <div className="flex items-center gap-12 pt-4">
+              <div>
+                <div className="text-3xl font-bold text-white mb-1">99.9%</div>
+                <div className="text-[10px] text-muted-foreground uppercase tracking-widest">Driver Isolation</div>
+              </div>
+              <div className="w-px h-10 bg-white/10" />
+              <div>
+                <div className="text-3xl font-bold text-white mb-1">~2ms</div>
+                <div className="text-[10px] text-muted-foreground uppercase tracking-widest">Syscall Latency</div>
+              </div>
             </div>
           </div>
 
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+          <div className="relative aspect-square lg:aspect-[4/5] rounded-sm overflow-hidden border border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.5)]">
             {aboutImg && (
               <Image 
                 src={aboutImg.imageUrl} 
                 alt={aboutImg.description}
                 fill
-                className="object-cover"
+                className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 data-ai-hint={aboutImg.imageHint}
               />
             )}
-            <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60" />
           </div>
         </div>
       </div>

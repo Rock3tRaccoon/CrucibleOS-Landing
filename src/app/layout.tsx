@@ -1,11 +1,10 @@
-
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'CrucibleOS Pulse | Next-Gen Open Source OS',
-  description: 'A modern, high-performance open source operating system designed for the future of computing.',
+  title: 'CrucibleOS Pulse | Next-Gen Microkernel OS',
+  description: 'A modern, high-performance microkernel operating system designed for the future of reliable computing.',
 };
 
 export default function RootLayout({

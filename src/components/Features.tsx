@@ -1,62 +1,62 @@
-
 import { Shield, Zap, Layers, Cpu, Globe, Lock } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 
 const features = [
   {
-    icon: <Zap className="w-8 h-8 text-accent" />,
-    title: "Microkernel Performance",
-    description: "Built on a lean microkernel architecture for minimal latency and maximum system responsiveness."
+    icon: <Zap className="w-5 h-5 text-primary" />,
+    title: "L4-Derived Microkernel",
+    description: "Highly optimized message passing ensures that IPC overhead is minimal, outperforming traditional monolithic designs."
   },
   {
-    icon: <Shield className="w-8 h-8 text-accent" />,
-    title: "Immutable Core",
-    description: "An immutable system root ensures that your OS remains clean, secure, and reproducible over time."
+    icon: <Shield className="w-5 h-5 text-primary" />,
+    title: "Address Space Isolation",
+    description: "Each system service runs in its own memory domain, preventing cross-process vulnerabilities and memory leaks."
   },
   {
-    icon: <Layers className="w-8 h-8 text-accent" />,
-    title: "Modular Drivers",
-    description: "Hot-swappable hardware drivers that run in user-space, preventing system crashes from hardware errors."
+    icon: <Layers className="w-5 h-5 text-primary" />,
+    title: "Native POSIX Layer",
+    description: "Full compatibility with industry standards. Run standard Unix utilities and applications with zero recompilation."
   },
   {
-    icon: <Cpu className="w-8 h-8 text-accent" />,
-    title: "Posix Compliant",
-    description: "Run your favorite Unix-based applications without modifications through our native compatibility layer."
+    icon: <Cpu className="w-5 h-5 text-primary" />,
+    title: "Rust-First Design",
+    description: "CrucibleOS core primitives are built in Rust, eliminating entire classes of memory safety bugs at the source."
   },
   {
-    icon: <Lock className="w-8 h-8 text-accent" />,
-    title: "Hardened Security",
-    description: "End-to-end memory protection and hardware-backed secure boot come standard on every installation."
+    icon: <Lock className="w-5 h-5 text-primary" />,
+    title: "Capabilities-Based",
+    description: "Granular permission sets for every process. No 'root' user; only defined capabilities assigned by the kernel."
   },
   {
-    icon: <Globe className="w-8 h-8 text-accent" />,
-    title: "Cloud Native",
-    description: "Built-in primitives for container orchestration and remote management from day one."
+    icon: <Globe className="w-5 h-5 text-primary" />,
+    title: "Distributed Scheduler",
+    description: "Automatically balance workloads across multi-core processors and network nodes with our transparent scheduler."
   }
 ];
 
 export function Features() {
   return (
-    <section id="features" className="py-24 bg-background">
+    <section id="features" className="py-32 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Core Functionalities</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Experience a system designed for stability, speed, and the future of interconnected computing.
+        <div className="max-w-3xl mb-24">
+          <span className="text-primary text-[10px] font-bold uppercase tracking-[0.3em] block mb-4">Architecture</span>
+          <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-8 leading-[1.1]">Built for the <br/>Extreme Edge.</h2>
+          <p className="text-lg text-muted-foreground/60 leading-relaxed">
+            We've stripped away the legacy bloat of 20th-century operating systems to create a system ready for the next hundred years of compute.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5 border border-white/5">
           {features.map((f, i) => (
-            <Card key={i} className="bg-card border-border hover:border-accent/50 transition-all feature-card-hover group">
-              <CardHeader>
-                <div className="mb-4 bg-primary/20 w-16 h-16 flex items-center justify-center rounded-2xl group-hover:bg-accent/20 transition-colors">
+            <Card key={i} className="bg-background border-none rounded-none hover:bg-white/[0.02] transition-colors p-8 group h-full">
+              <CardHeader className="p-0 mb-6">
+                <div className="mb-6">
                   {f.icon}
                 </div>
-                <CardTitle className="text-xl mb-2">{f.title}</CardTitle>
+                <CardTitle className="text-xl font-bold tracking-tight text-white">{f.title}</CardTitle>
               </CardHeader>
-              <CardContent>
-                <CardDescription className="text-base leading-relaxed text-muted-foreground">
+              <CardContent className="p-0">
+                <CardDescription className="text-sm leading-relaxed text-muted-foreground/60">
                   {f.description}
                 </CardDescription>
               </CardContent>
