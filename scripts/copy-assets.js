@@ -35,4 +35,4 @@ for (const name of ["favicon.ico", "favicon-16.png", "favicon-32.png", "apple-to
 	cpSync(join(root, "assets", name), join(root, "web-folder", name));
 }
 
-console.log("crucible-frontend: copied sec-ui fonts, forge-core wasm binary, logo mark, and favicons to web-folder/");
+console.log("crucible-os-landing: copied sec-ui fonts, forge-core wasm binary, logo mark, and favicons to web-folder/");
