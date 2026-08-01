@@ -1,0 +1,10 @@
+{
+	"name": "sec-ui",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Vendored build of the sec-ui component library. Source of truth is the sibling sec-ui repo (local-only, not yet pushed anywhere); re-sync with scripts/vendor-sec-ui.js.",
+	"type": "module",
+	"main": "dist/index.js",
+	"module": "dist/index.js",
+	"types": "dist/index.d.ts"
+}

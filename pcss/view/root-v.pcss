@@ -1,0 +1,42 @@
+root-v {
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr;
+	background: var(--sec-bg-0);
+	color: var(--sec-text);
+	overflow: hidden;
+
+	/* Without this, .bg-magma's fixed + z-index:-1 has no ancestor stacking context to scope
+	   against, so it's compared at the document root level — where it loses to <body>'s own
+	   opaque background (set by tokens.css's `html, body { background: var(--sec-bg-0) }`),
+	   which paints *after* negative-z-index descendants in root stacking order. Establishing a
+	   stacking context here scopes the negative z-index to root-v's own children instead. */
+	isolation: isolate;
+
+	/* Mounted once here (not per-page like sec-ember-field) so it persists across route
+	   changes. Pinned behind every page's content — each page-view's own background was made
+	   transparent (see e.g. landing-v.pcss) specifically so this shows through. */
+	.bg-magma {
+		position: fixed;
+		inset: 0;
+		z-index: -1;
+		pointer-events: none;
+	}
+
+	main:has(notfound-v) {
+		display: grid;
+		place-items: center;
+		overflow: auto;
+	}
+
+	main {
+		overflow-y: auto;
+		min-height: 0; /* important for grid children */
+		display: block;
+	}
+}
+
+cr-header .brand-mark {
+	color: var(--sec-accent);
+	flex: none;
+}

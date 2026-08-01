@@ -1,0 +1,64 @@
+notfound-v {
+	position: relative;
+	display: grid;
+	justify-content: center;
+	background: var(--sec-bg-0);
+	overflow: hidden;
+	min-height: 100%;
+}
+
+.nf-field {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	opacity: 0.5;
+}
+
+.nf-vignette {
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	background: radial-gradient(50% 60% at 50% 45%, transparent, var(--sec-bg-0) 78%);
+	pointer-events: none;
+}
+
+notfound-v > main {
+	position: relative;
+	z-index: 1;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	gap: var(--sec-space-6);
+	width: 80vw;
+	max-width: 40rem;
+}
+
+notfound-v > main > section {
+	display: grid;
+	gap: var(--sec-space-3);
+	text-align: center;
+}
+
+notfound-v h2.main {
+	font-size: var(--sec-fs-h1);
+	font-weight: 600;
+	color: var(--sec-text);
+}
+
+notfound-v p.shadow {
+	color: var(--sec-text-secondary);
+	font-size: var(--sec-fs-body);
+	line-height: var(--sec-lh-body);
+}
+
+notfound-v > main > section.buttons {
+	display: flex;
+	justify-content: center;
+	gap: var(--sec-space-3);
+}
+
+@media (max-width: 576px) {
+	notfound-v > main > section.buttons {
+		flex-direction: column;
+	}
+}

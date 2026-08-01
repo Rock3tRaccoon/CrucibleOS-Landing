@@ -1,0 +1,129 @@
+contact-v {
+	display: block;
+}
+
+contact-v > main {
+	display: flex;
+	flex-direction: column;
+	gap: var(--sec-space-7);
+	max-width: 44rem;
+	margin: 0 auto;
+	padding: var(--sec-space-9) var(--sec-space-8);
+	box-sizing: border-box;
+	width: 100%;
+}
+
+contact-v > main > section {
+	display: flex;
+	flex-direction: column;
+	gap: var(--sec-space-4);
+}
+
+.contact-hero {
+	position: relative;
+	overflow: hidden;
+}
+
+.contact-hero .hero-embers {
+	position: absolute;
+	inset: -20% -10%;
+	z-index: 0;
+	pointer-events: none;
+}
+
+.contact-hero > *:not(.hero-embers) {
+	position: relative;
+	z-index: 1;
+}
+
+.contact-hero p {
+	color: var(--sec-text-secondary);
+	font-size: var(--sec-fs-body-lg);
+	line-height: var(--sec-lh-body);
+	max-width: 34rem;
+}
+
+contact-v h3 {
+	font-size: var(--sec-fs-h2);
+	font-weight: 600;
+	letter-spacing: -0.01em;
+	color: var(--sec-text);
+}
+
+/* CONTACT TILES */
+
+.tile-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--sec-space-3);
+}
+
+.tile-container sec-card header {
+	display: flex;
+	align-items: center;
+	gap: var(--sec-space-2);
+	font-size: var(--sec-fs-h3);
+	font-weight: 600;
+}
+
+.tile-container sec-card svg {
+	width: 1.25rem;
+	height: 1.25rem;
+	flex-shrink: 0;
+	color: var(--sec-accent);
+}
+
+.tile-container sec-card a {
+	color: var(--sec-text-secondary);
+	text-decoration: none;
+}
+
+.tile-container sec-card a:hover {
+	color: var(--sec-accent);
+}
+
+.tile-container sec-card p {
+	margin: 0;
+	color: var(--sec-text-secondary);
+}
+
+/* FORM */
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: var(--sec-space-4);
+}
+
+.form-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--sec-space-4);
+}
+
+.contact-form .send {
+	align-self: flex-end;
+}
+
+.status {
+	min-height: 1.2em;
+	font-size: var(--sec-fs-sm);
+	color: var(--sec-text-secondary);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+	contact-v > main {
+		padding: var(--sec-space-7) var(--sec-space-4);
+	}
+
+	.tile-container {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 508px) {
+	.form-row {
+		grid-template-columns: 1fr;
+	}
+}

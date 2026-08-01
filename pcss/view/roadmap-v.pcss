@@ -1,0 +1,131 @@
+roadmap-v {
+	display: block;
+}
+
+roadmap-v > main {
+	display: flex;
+	flex-direction: column;
+	gap: var(--sec-space-7);
+	max-width: var(--sec-content-max);
+	margin: 0 auto;
+	padding: var(--sec-space-9) var(--sec-space-8);
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.roadmap-hero {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: var(--sec-space-4);
+	max-width: 46rem;
+	overflow: hidden;
+}
+
+.roadmap-hero .hero-embers {
+	position: absolute;
+	inset: -20% -10%;
+	z-index: 0;
+	pointer-events: none;
+}
+
+.roadmap-hero > *:not(.hero-embers) {
+	position: relative;
+	z-index: 1;
+}
+
+.roadmap-hero h1 {
+	font-size: var(--sec-fs-display);
+	font-weight: 600;
+	line-height: var(--sec-lh-tight);
+	letter-spacing: -0.03em;
+	max-width: 100%;
+}
+
+.roadmap-hero p {
+	color: var(--sec-text-secondary);
+	font-size: var(--sec-fs-body-lg);
+	line-height: var(--sec-lh-body);
+}
+
+roadmap-v section:not(.roadmap-hero) {
+	padding-top: var(--sec-space-7);
+	border-top: 1px solid var(--sec-line);
+	display: flex;
+	flex-direction: column;
+	gap: var(--sec-space-4);
+}
+
+/* STATUS COLUMNS */
+
+.status-columns {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--sec-space-6);
+}
+
+.col-heading {
+	font-size: var(--sec-fs-h3);
+	font-weight: 600;
+}
+
+.col-heading.working {
+	color: var(--sec-success);
+}
+
+.col-heading.not-yet {
+	color: var(--sec-danger);
+}
+
+.status-col ul {
+	display: flex;
+	flex-direction: column;
+	gap: var(--sec-space-3);
+	margin: 0;
+	padding-left: 1.25rem;
+	color: var(--sec-text-secondary);
+	line-height: var(--sec-lh-body);
+	font-size: var(--sec-fs-sm);
+}
+
+/* SECTION HEADER (shared pattern) */
+
+.section-header {
+	display: flex;
+	align-items: center;
+	gap: var(--sec-space-3);
+}
+
+.section-header .accent-line {
+	width: 3rem;
+	height: 2px;
+	background: var(--sec-accent);
+	flex: none;
+}
+
+.section-header h2 {
+	font-size: var(--sec-fs-h2);
+	font-weight: 600;
+	letter-spacing: 0.01em;
+}
+
+.section-lead {
+	max-width: 52rem;
+	color: var(--sec-text-secondary);
+	line-height: var(--sec-lh-body);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+	.status-columns {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 600px) {
+	roadmap-v > main {
+		padding: var(--sec-space-7) var(--sec-space-4);
+	}
+}

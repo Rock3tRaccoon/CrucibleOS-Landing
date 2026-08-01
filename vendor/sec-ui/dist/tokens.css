@@ -1,0 +1,88 @@
+/* sec-ui design tokens — single source of truth. Custom properties inherit through
+   shadow DOM boundaries, so every sec-ui component reads these without redeclaring them. */
+
+:root {
+  color-scheme: dark;
+
+  /* surfaces */
+  --sec-bg-0: #05070a;
+  --sec-bg-1: #0a0e15;
+  --sec-bg-2: #10151f;
+  --sec-bg-field: #0d1219;
+  --sec-overlay: rgba(4, 6, 10, 0.72);
+
+  /* borders */
+  --sec-line: rgba(255, 255, 255, 0.09);
+  --sec-line-soft: rgba(255, 255, 255, 0.05);
+  --sec-line-strong: rgba(255, 255, 255, 0.18);
+
+  /* text */
+  --sec-text: #eef2f6;
+  --sec-text-secondary: #a9b3c1;
+  --sec-text-muted: #6b7484;
+  --sec-text-inverse: #05070a;
+
+  /* accent (signal cyan) */
+  --sec-accent: #2dd4ee;
+  --sec-accent-hover: #5fe1f4;
+  --sec-accent-press: #17b8d1;
+  --sec-accent-subtle: rgba(45, 212, 238, 0.1);
+  --sec-accent-line: rgba(45, 212, 238, 0.35);
+
+  /* status */
+  --sec-success: #3ddc84;
+  --sec-warning: #f1c21b;
+  --sec-danger: #fa4d56;
+  --sec-purple: #a56eff;
+
+  /* type */
+  --sec-font-sans: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  --sec-font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  --sec-fs-display: clamp(2.5rem, 5.25vw, 4.75rem);
+  --sec-fs-h1: clamp(2.25rem, 4vw, 3.25rem);
+  --sec-fs-h2: clamp(1.75rem, 3vw, 2.5rem);
+  --sec-fs-h3: 1.25rem;
+  --sec-fs-body-lg: 1.125rem;
+  --sec-fs-body: 1rem;
+  --sec-fs-sm: 0.875rem;
+  --sec-fs-xs: 0.75rem;
+
+  --sec-lh-tight: 1.1;
+  --sec-lh-body: 1.6;
+
+  /* spacing scale */
+  --sec-space-1: 4px;
+  --sec-space-2: 8px;
+  --sec-space-3: 12px;
+  --sec-space-4: 16px;
+  --sec-space-5: 24px;
+  --sec-space-6: 32px;
+  --sec-space-7: 48px;
+  --sec-space-8: 64px;
+  --sec-space-9: 96px;
+
+  --sec-radius-sm: 3px;
+  --sec-radius-md: 6px;
+  --sec-radius-lg: 10px;
+
+  --sec-shadow-card: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 12px 32px rgba(0, 0, 0, 0.35);
+
+  --sec-ease: cubic-bezier(0.2, 0.6, 0.2, 1);
+  --sec-transition-fast: 0.12s var(--sec-ease);
+  --sec-transition-med: 0.22s var(--sec-ease);
+
+  --sec-header-h: 88px;
+  --sec-content-max: 1200px;
+}
+
+html, body {
+  background: var(--sec-bg-0);
+  color: var(--sec-text);
+  font-family: var(--sec-font-sans);
+}
+
+::selection {
+  background: var(--sec-accent);
+  color: var(--sec-text-inverse);
+}

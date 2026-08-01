@@ -1,0 +1,29 @@
+/* CrucibleOS brand overrides on top of sec-ui's shared tokens (imported before this file).
+   Same component library as Sing Security and LFAM, deliberately distinct identity: the kernel
+   is named "Forge" and its desktop compositor "ember" — so the brand leans into that literally,
+   a forge/molten-metal palette (near-black charcoal + hot ember-orange) instead of Sing
+   Security's cyan-glass-neon or LFAM's gunmetal-brass. A second cool "verified" cyan is reserved
+   for cryptographic/attestation callouts so PQC and capability content reads distinctly from
+   the primary marketing accent. */
+:root {
+	--sec-bg-0: #0b0908;
+	--sec-bg-1: #151210;
+	--sec-bg-2: #1e1a17;
+
+	--sec-line: rgba(255, 255, 255, 0.1);
+	--sec-line-soft: rgba(255, 255, 255, 0.06);
+	--sec-line-strong: rgba(255, 255, 255, 0.2);
+
+	--sec-accent: #ff6a3d;
+	--sec-accent-hover: #ff8a63;
+	--sec-accent-press: #e2502a;
+	--sec-accent-subtle: rgba(255, 106, 61, 0.1);
+	--sec-accent-line: rgba(255, 106, 61, 0.38);
+
+	/* reserved for cryptographic/attestation content (PQC signatures, verified-boot chain) —
+	   kept distinct from the ember marketing accent so "this is cryptographically checked"
+	   reads as a different signal than "this is the brand color" */
+	--crucible-verify: #49d6c8;
+	--crucible-verify-line: rgba(73, 214, 200, 0.35);
+	--crucible-verify-subtle: rgba(73, 214, 200, 0.1);
+}
